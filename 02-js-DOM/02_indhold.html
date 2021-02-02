@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Titel</h1>
+        <main>
+            <h2>Undertitel</h2>
+            <section class="news">
+                <article class="article"><img src="https://placeimg.com/640/480/any">
+                    <h3>Artikel 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo nemo, quibusdam eum labore iure reprehenderit veniam aperiam iste magni debitis blanditiis quod saepe esse ex. Libero maiores, ratione amet praesentium, inventore quibusdam odio a fugit incidunt totam et voluptatem!</p>
+                </article>
+                <article class="article"><img src="https://placeimg.com/640/480/any">
+                    <h3>Artikel 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo nemo, quibusdam eum labore iure reprehenderit veniam aperiam iste magni debitis blanditiis quod saepe esse ex. Libero maiores, ratione amet praesentium, inventore quibusdam odio a fugit incidunt totam et voluptatem!</p>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">This is footer</footer>
+
+    </main>
+    <script>
+        const titel = document.querySelector("h1");
+        console.log(titel);
+        titel.textContent = "Billedgalleri";
+        titel.innerHTML = "<h1> Billeder  </h1>";
+
+        const undertitel = document.querySelector("h2");
+        console.log(undertitel);
+        undertitel.textContent = "Museum";
+        undertitel.innerHTML = "<h2> Museum</h2>";
+
+        const artikel = document.querySelector("h3");
+        console.log(artikel);
+        artikel.textContent = "Helt nyt";
+        artikel.innerHTML = "<h3> Helt nyt</h3>";
+
+
+
+        const artikel1 = document.querySelector("article:nth-child(2) h3");
+        artikel1.textContent = "Dette er meget vigtigt";
+
+        const tekst = document.querySelector("article:nth-child(1) p");
+        tekst.textContent = "Vil du gerne vide mere?";
+
+        const tekst1 = document.querySelector("article:nth-child(2) p");
+        tekst1.textContent = "Så se her!";
+
+        const footer = document.querySelector("footer");
+        console.log(footer);
+        footer.textContent = "Hej med dig";
+        footer.innerHTML = "<footer> Hej med dig</footer>";
+    </script>
+</body></html>
