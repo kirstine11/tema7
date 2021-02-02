@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Titel</h1>
+        <main>
+            <h2>Undertitel</h2>
+            <section class="news">
+                <article class="article"><img src="https://placeimg.com/640/480/any">
+                    <h3>Artikel 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo nemo, quibusdam eum labore iure reprehenderit veniam aperiam iste magni debitis blanditiis quod saepe esse ex. Libero maiores, ratione amet praesentium, inventore quibusdam odio a fugit incidunt totam et voluptatem!</p>
+                </article>
+                <article class="article"><img src="https://placeimg.com/640/480/any">
+                    <h3>Artikel 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo nemo, quibusdam eum labore iure reprehenderit veniam aperiam iste magni debitis blanditiis quod saepe esse ex. Libero maiores, ratione amet praesentium, inventore quibusdam odio a fugit incidunt totam et voluptatem!</p>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">This is footer</footer>
+
+    </main>
+    <script>
+        const pic1 = document.querySelector("article:nth-child(1) img");
+        console.log(pic1);
+        pic1.src = "pil.jpg";
+        pic1.alt = "min lille pil";
+
+        const pic2 = document.querySelector("article:nth-child(2) img");
+        console.log(pic2);
+        pic2.src = "plante.jpg";
+        pic2.alt = "min lille plante";
+
+        const pic3 = document.querySelector("article:nth-child(3) img");
+        console.log(pic3);
+
+        let mainSection = document.querySelector("section");
+
+        //nyt article element
+
+        let newArticle = document.createElement("article");
+        //nyt H# element
+        let overskrift = document.createElement("h3");
+
+
+
+        //tekst til overskriften
+        let overskriftText = document.createTextNode("Article 3");
+        let billede = document.createElement("img");
+        billede.src = "sort.jpg";
+        console.log(overskriftText);
+        overskriftText.textContent = "Helt nyt"
+        //indsæt tekst i overskrift
+        ;
+
+
+        overskrift.appendChild(overskriftText);
+        //tilføj overskrift til article
+        newArticle.appendChild(overskrift);
+        newArticle.appendChild(billede);
+
+
+        //tilføj article til section
+        mainSection.appendChild(newArticle);
+    </script>
+</body></html>
