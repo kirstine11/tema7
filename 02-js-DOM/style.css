@@ -21,3 +21,9 @@ footer {
     border: 1px solid #333;
 
 }
+
+box {
+    box-shadow: 22px 10px 71px 36px rgba(187, 56, 56, 0.69);
+    -webkit-box-shadow: 22px 10px 71px 36px rgba(187, 56, 56, 0.69);
+    -moz-box-shadow: 22px 10px 71px 36px rgba(187, 56, 56, 0.69);
+}

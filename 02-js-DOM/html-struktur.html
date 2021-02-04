@@ -27,7 +27,15 @@
         <footer class="footer">This is footer</footer>
 
     </main>
-    <script src=""></script>
-</body>
+    <script>
+        const titel = document.querySelector("h1");
+        console.log(titel);
+        titel.textContent = "Billedgalleri";
+        titel.innerHTML = "<h1> Billeder  </h1>"
 
-</html>
+        const pic1 = document.querySelector("article img");
+        console.log(pic1);
+
+        pic1.alt = "billede af arkitektur";
+    </script>
+</body></html>
